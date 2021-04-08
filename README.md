@@ -1,4 +1,4 @@
-# Mūsų naujas java projektas
+# Java projektas
 
 ## Pirmas žingsnis
 
