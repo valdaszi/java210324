@@ -1,6 +1,6 @@
 package lt.bit.java.p08;
 
-public class Mokinys {
+public class Mokinys implements IMokinys {
 
     private String vardas;
     private String pavarde;
@@ -14,24 +14,29 @@ public class Mokinys {
         this.trimestras = trimestras;
     }
 
-    public double vidurkis() {
+    @Override
+    public double getVidurkis() {
         double vid = 0.0;
         for (int i : trimestras) vid += i;
         return vid / trimestras.length;
     }
 
+    @Override
     public String getVardas() {
         return vardas;
     }
 
+    @Override
     public String getPavarde() {
         return pavarde;
     }
 
+    @Override
     public int getKlase() {
         return klase;
     }
 
+    @Override
     public int[] getTrimestras() {
         return trimestras;
     }

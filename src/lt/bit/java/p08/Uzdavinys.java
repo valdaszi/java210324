@@ -25,7 +25,7 @@ public class Uzdavinys {
 //            System.out.println(mokinys);
             System.out.println(mokinys.getKlase() + " " + mokinys.getVardas() + " " +
                     mokinys.getPavarde() + " " + Arrays.toString(mokinys.getTrimestras()) + " " +
-                    mokinys.vidurkis());
+                    mokinys.getVidurkis());
         }
     }
 
@@ -34,8 +34,8 @@ public class Uzdavinys {
         Arrays.sort(mok, (Mokinys m1, Mokinys m2) -> {
             if (m1.getKlase() != m2.getKlase()) return m1.getKlase() - m2.getKlase();
 
-            if (m1.vidurkis() < m2.vidurkis()) return 1;
-            if (m1.vidurkis() > m2.vidurkis()) return -1;
+            if (m1.getVidurkis() < m2.getVidurkis()) return 1;
+            if (m1.getVidurkis() > m2.getVidurkis()) return -1;
 
             return 0;
         });
