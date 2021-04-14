@@ -12,6 +12,12 @@ public class Human implements IGamer {
         this.number = n++;
     }
 
+    public Human(Pair pair) {
+        this.number = n++;
+        this.name = pair.name();
+
+    }
+
     public String getName() {
         return name;
     }
@@ -22,7 +28,7 @@ public class Human implements IGamer {
 
     @Override
     public String name() {
-        return number + " " + name;
+        return name + " ("+ number + ")";
     }
 
     @Override
