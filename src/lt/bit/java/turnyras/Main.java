@@ -24,44 +24,6 @@ public class Main {
                 new Human("Elvyrka")
         };
 
-//        System.out.println("1 ratas:");
-//        int count = humans.length;
-//        Pair[] poros = new Pair[count / 2];
-//        // i = 0, 2, 4, 6, ...
-//        for (int i = 0; i < count; i += 2) {
-//            poros[i / 2] = new Pair(humans[i], humans[i + 1]);
-//        }
-//        for (Pair x : poros) {
-//            System.out.println(x.board());
-//        }
-
-//        System.out.println("2 ratas:");
-//        count = poros.length;
-//        Pair[] poros2 = new Pair[count / 2];
-//        for (int i = 0; i < count; i += 2) {
-//            poros2[i / 2] = new Pair(poros[i], poros[i + 1]);
-//        }
-//        for (Pair x : poros2) {
-//            System.out.println(x.board());
-//        }
-
-//        System.out.println("3 ratas:");
-//        count = poros2.length;
-//        Pair[] poros3 = new Pair[count / 2];
-//        for (int i = 0; i < count; i += 2) {
-//            poros3[i / 2] = new Pair(poros2[i], poros2[i + 1]);
-//        }
-//        for (Pair x : poros3) {
-//            System.out.println(x.board());
-//        }
-
-//        IGamer[] ratas = humans;
-//        ratas = ratas(1, ratas);
-//        ratas = ratas(2, ratas);
-//        ratas = ratas(3, ratas);
-//        if (ratas.length == 1) System.out.println("Pabaiga");
-
-
         IGamer[] ratas = humans;
         int n = 1;
         while (ratas.length > 1) {
