@@ -1,7 +1,6 @@
-package lt.bit.java.p16;
+package lt.bit.java.p26;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package lt.bit.java.p16;
+package lt.bit.java.p26;
 
 public class Main {
 
