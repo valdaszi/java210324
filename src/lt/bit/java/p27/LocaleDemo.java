@@ -61,7 +61,7 @@ public class LocaleDemo {
 
     static void formatMessage(Locale locale, String key) {
         ResourceBundle messages = ResourceBundle.getBundle(
-                LocaleDemo.class.getPackageName() + ".messages", locale);
+                LocaleDemo.class.getPackage().getName() + ".messages", locale);
         System.out.println(key + ": " + messages.getString(key));
     }
 }
